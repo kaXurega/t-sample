@@ -9,7 +9,7 @@ export const News = () => {
       <section>
         <h1>News</h1>
         <p>
-          <Link href="home">
+          <Link href="/">
             <a>Go Home</a>
           </Link>
         </p>

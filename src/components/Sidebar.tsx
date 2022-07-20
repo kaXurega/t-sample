@@ -6,11 +6,11 @@ import classNames from 'tailwindcss-classnames';
 import { HomeIcon, NewsIcon, MyPageIcon, PredictIcon, ContactIcon, LogoutIcon } from './icons';
 
 const menuItems = [
-  { id: 1, label: 'Home', icon: HomeIcon, link: '/home' },
-  { id: 2, label: 'MyPage', icon: MyPageIcon, link: '/myPage' },
-  { id: 3, label: 'News', icon: NewsIcon, link: '/news' },
+  { id: 1, label: 'Home', icon: HomeIcon, link: '/' },
+  // { id: 2, label: 'MyPage', icon: MyPageIcon, link: '/myPage' },
+  // { id: 3, label: 'News', icon: NewsIcon, link: '/news' },
   { id: 4, label: 'Movie', icon: PredictIcon, link: '/movie' },
-  { id: 5, label: 'Contact', icon: ContactIcon, link: '/contact' },
+  // { id: 5, label: 'Contact', icon: ContactIcon, link: '/contact' },
   { id: 6, label: 'Logout', icon: LogoutIcon, link: '/logout' },
 ];
 
@@ -62,7 +62,7 @@ const Sidebar = () => {
           )}
           <div className="flex items-center pl-1 gap-4">
             <span className={classNames('mt-2 text-3xl font-medium text-text', { hidden: toggleCollapse })}>
-              <Link href="/home">
+              <Link href="/">
                 <a>Logo</a>
               </Link>
             </span>
@@ -73,7 +73,7 @@ const Sidebar = () => {
             const classes = getNavItemClasses(menu);
             return (
               <div className={classes} key={menu.id}>
-                <Link href={menu.link} as={`/${menu.link}`}>
+                <Link href={menu.link}>
                   <a className="flex py-4 px-3 items-center w-full h-full">
                     <div style={{ width: '2.5rem' }}>
                       <Icon />

@@ -9,11 +9,9 @@ export const Home = () => {
       <section>
         <h1>Home</h1>
         <div className="">
-          <p>
-            <Link href="myPage">
-              <a>Go MyPage</a>
-            </Link>
-          </p>
+          {/* <Link href="myPage">
+            <a>Go MyPage</a>
+          </Link> */}
         </div>
       </section>
     </>

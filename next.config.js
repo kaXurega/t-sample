@@ -2,8 +2,7 @@ const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache');
 
 const urlPrefix = process.env.URL_PREFIX ? '/' + process.env.URL_PREFIX : '';
-
-module.exports = {
+const nextConfig = {
   basePath: urlPrefix,
   trailingSlash: true,
   reactStrictMode: true,
@@ -11,6 +10,8 @@ module.exports = {
     buildActivityPosition: 'bottom-right',
   },
   poweredByHeader: false,
+  basePath: process.env.GITHUB_ACTIONS ? '/t-sample' : '',
+  trailingSlash: true,
 };
 
 module.exports = withPWA({
@@ -21,4 +22,5 @@ module.exports = withPWA({
     skipWaiting: true,
     disable: process.env.NODE_ENV === 'development',
   },
+  nextConfig,
 });

@@ -19,7 +19,7 @@ export const MyPageInfo = () => {
           </Link>
         </>
         <>
-          <Link href="home">
+          <Link href="/">
             <a>Go Home</a>
           </Link>
         </>

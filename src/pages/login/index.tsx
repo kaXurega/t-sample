@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
-import { Login } from 'components/login/Login';
+import { SignIn } from 'components/login/Login';
 
-const LoginPage: NextPage = () => <Login />;
+const LoginPage: NextPage = () => <SignIn csrfToken={undefined} />;
 
 export default LoginPage;

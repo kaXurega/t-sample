@@ -10,7 +10,7 @@ export const MovieList = () => {
         <div className="">
           <h1 className="">MovieList</h1>
           <p>
-            <Link href="home">
+            <Link href="/">
               <a>Go Home</a>
             </Link>
           </p>

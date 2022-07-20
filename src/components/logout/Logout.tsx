@@ -8,7 +8,7 @@ export const Logout = () => {
   useEffect(() => {
     setTimeout(() => {
       router.push('/');
-    }, 3 * 1000);
+    }, 1000);
   }, [router]);
 
   return (
@@ -16,7 +16,7 @@ export const Logout = () => {
       <NextSeo title="Logout" description="logout page of tunnel app!" />
       <div className="">
         <h1>Logout Page</h1>
-        <p>Returns to the start page after 3seconds.</p>
+        <p>Returns to the start page after 1second.</p>
       </div>
     </>
   );

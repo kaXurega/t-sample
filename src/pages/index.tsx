@@ -19,7 +19,7 @@ const IndexPage: NextPage = () => {
       <Footer />
       </Page> */}
       <h1>LP</h1>
-      <Link href="/login">
+      <Link href="login">
         <a>start</a>
       </Link>
     </div>

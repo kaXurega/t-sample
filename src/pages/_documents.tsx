@@ -1,6 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document';
 import React from 'react';
-import loader from '@/components/Loader';
+import loader from 'components/Loader';
 
 export type Props = {};
 

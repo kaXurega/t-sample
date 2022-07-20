@@ -1,8 +1,7 @@
 import '@testing-library/jest-dom/extend-expect';
-import Home from '../../src/pages/index';
+import Home from 'pages/index';
 import client, { Session } from 'next-auth/client';
-import { render } from 'react-dom';
-import { expect } from 'chai';
+import { render, screen } from '@testing-library/react';
 
 describe('Home', () => {
   it('should render signin view', async () => {

@@ -9,8 +9,8 @@ export const HomeIcon = () => {
   return Icon('/icons/Home.svg', 'Home');
 };
 
-export const DashboradIcon = () => {
-  return Icon('/icons/Dashboard.svg', 'Dashboard');
+export const NewsIcon = () => {
+  return Icon('/icons/News.svg', 'News');
 };
 
 export const MyPageIcon = () => {

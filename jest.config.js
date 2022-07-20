@@ -4,15 +4,21 @@ const createJestConfig = nextJest({
   dir: './',
 });
 
-customJestConfig = {
-  roots: ['<rootDir>/tests'],
-  testEnvironment: 'jsdom',
-  testMatch: ['**/__tests__/**/*.+(js|ts)', '**/?(*.)+(spec|test).+(js|ts)'],
-  transform: {
-    '^.+\\.(js|ts)$': '@swc/jest',
-    '^.+\\.(css|scss)$': 'jest-transform-stub',
-  },
-  moduleFileExtensions: ['js', 'ts'],
+const customJestConfig = {
+  roots: ['<rootDir>/'],
+  moduleDirectories: ['node_modules', '<rootDir>/src'],
+  testEnvironment: 'jest-environment-jsdom',
+  collectCoverageFrom: [
+    '!**/_*.tsx',
+    '!**/*.d.ts',
+    '!**/node_modules/**',
+    '!**/.next/**',
+    '!**/coverage/**',
+    '!**/public/**',
+    '!**/__tests__/**',
+    '!**/*rc',
+    '!**/*.json',
+  ],
 };
 
 module.exports = createJestConfig(customJestConfig);

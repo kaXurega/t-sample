@@ -18,7 +18,7 @@ export const Form = () => {
   });
   const onSubmit: SubmitHandler<IFormInputs> = (data) => {
     console.log(data);
-    Router.push('/form/result');
+    Router.push('form/result');
   };
   console.log(errors);
 
@@ -36,7 +36,7 @@ export const Form = () => {
         </form> */}
         <h1>Contact form</h1>
         <p>
-          <Link href="/home">
+          <Link href="home">
             <a>Go Home</a>
           </Link>
         </p>

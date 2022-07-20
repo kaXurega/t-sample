@@ -8,9 +8,9 @@ export const MovieList = () => {
       <NextSeo title="MovieList" description="movie page of tunnel app!" />
       <section>
         <div className="">
-          <h1 className="">movieList</h1>
+          <h1 className="">MovieList</h1>
           <p>
-            <Link href="/home">
+            <Link href="home">
               <a>Go Home</a>
             </Link>
           </p>

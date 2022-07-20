@@ -2,14 +2,14 @@ import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import React from 'react';
 
-export const Dashboard = () => {
+export const News = () => {
   return (
     <>
-      <NextSeo title="Dashboard" description="dashboard page of tunnel app!" />
+      <NextSeo title="News" description="News page of tunnel app!" />
       <section>
-        <h1>Dashboard</h1>
+        <h1>News</h1>
         <p>
-          <Link href="/home">
+          <Link href="home">
             <a>Go Home</a>
           </Link>
         </p>

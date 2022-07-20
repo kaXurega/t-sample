@@ -1,6 +1,6 @@
 import type { AppPropsWithLayout } from 'next/app';
 import React, { useEffect } from 'react';
-import '@/styles/globals.scss';
+import 'styles/style.scss';
 
 const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
   useEffect(() => {

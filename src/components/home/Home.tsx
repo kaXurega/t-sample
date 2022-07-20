@@ -7,10 +7,10 @@ export const Home = () => {
     <>
       <NextSeo title="Home" description="home page of tunnel app!" />
       <section>
-        <h1>Home of Tunnel app!</h1>
+        <h1>Home</h1>
         <div className="">
           <p>
-            <Link href="/myPage">
+            <Link href="myPage">
               <a>Go MyPage</a>
             </Link>
           </p>
